@@ -1,2 +1,3 @@
-## Password Strength Checker
+## PASSWORD STRENGTH CHECKER
+
 
