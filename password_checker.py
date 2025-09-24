@@ -1,27 +1,4 @@
 
- 
-        'strength': strength,
-        'color': color
-    }
-
-def check_common_patterns(password: str) -> bool:
-    """Check for common weak patterns in password."""
-    password_lower = password.lower()
-    
-    # Common patterns
-    common_patterns = [
-        r'123',
-        r'abc',
-        r'qwerty',
-        r'password',
-        r'admin',
-        r'login',
-        r'user'
-    ]
-    
-    for pattern in common_patterns:
-        if re.search(pattern, password_lower):
-            return True
     
     return False
 
@@ -193,5 +170,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
