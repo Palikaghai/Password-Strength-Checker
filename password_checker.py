@@ -1,31 +1,5 @@
 
-    # Calculate score
-    score = sum(criteria.values())
-    max_score = len(criteria)
-    percentage = (score / max_score) * 100
-    
-    # Determine strength level
-    if percentage >= 87.5:
-        strength = "Very Strong"
-        color = "green"
-    elif percentage >= 75:
-        strength = "Strong"
-        color = "lightgreen"
-    elif percentage >= 62.5:
-        strength = "Moderate"
-        color = "orange"
-    elif percentage >= 50:
-        strength = "Weak"
-        color = "red"
-    else:
-        strength = "Very Weak"
-        color = "darkred"
-    
-    return {
-        'criteria': criteria,
-        'score': score,
-        'max_score': max_score,
-        'percentage': percentage,
+ 
         'strength': strength,
         'color': color
     }
@@ -219,4 +193,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
