@@ -1,20 +1,3 @@
-
-
-    
-    if not criteria['special_chars']:
-        suggestions.append("🔹 Include special characters (!@#$%^&*)")
-    
-    if not criteria['no_common_patterns']:
-        suggestions.append("🔹 Avoid common patterns like '123', 'abc', 'qwerty'")
-    
-    if not criteria['no_repeated_chars']:
-        suggestions.append("🔹 Avoid repeating the same character 3+ times")
-    
-    if not criteria['good_length']:
-        suggestions.append("🔹 Consider using 12+ characters for better security")
-    
-    return suggestions
-
 def main():
     st.set_page_config(
         page_title="Password Strength Checker",
@@ -146,6 +129,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
