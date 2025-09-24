@@ -1,24 +1,4 @@
-import streamlit as st
-import re
-import string
-from typing import Dict, List, Tuple
 
-def check_password_strength(password: str) -> Dict:
-    """
-    Analyze password strength based on multiple criteria.
-    Returns a dictionary with strength metrics and overall score.
-    """
-    criteria = {
-        'length': len(password) >= 8,
-        'uppercase': bool(re.search(r'[A-Z]', password)),
-        'lowercase': bool(re.search(r'[a-z]', password)),
-        'digits': bool(re.search(r'\d', password)),
-        'special_chars': bool(re.search(r'[!@#$%^&*(),.?":{}|<>]', password)),
-        'no_common_patterns': not check_common_patterns(password),
-        'no_repeated_chars': not has_repeated_chars(password),
-        'good_length': len(password) >= 12
-    }
-    
     # Calculate score
     score = sum(criteria.values())
     max_score = len(criteria)
@@ -239,3 +219,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
