@@ -1,29 +1,5 @@
 
-    
-    return False
 
-def has_repeated_chars(password: str, threshold: int = 3) -> bool:
-    """Check if password has too many repeated characters."""
-    for char in set(password):
-        if password.count(char) >= threshold:
-            return True
-    return False
-
-def generate_suggestions(criteria: Dict) -> List[str]:
-    """Generate improvement suggestions based on failed criteria."""
-    suggestions = []
-    
-    if not criteria['length']:
-        suggestions.append("🔹 Use at least 8 characters (12+ recommended)")
-    
-    if not criteria['uppercase']:
-        suggestions.append("🔹 Include at least one uppercase letter (A-Z)")
-    
-    if not criteria['lowercase']:
-        suggestions.append("🔹 Include at least one lowercase letter (a-z)")
-    
-    if not criteria['digits']:
-        suggestions.append("🔹 Include at least one number (0-9)")
     
     if not criteria['special_chars']:
         suggestions.append("🔹 Include special characters (!@#$%^&*)")
@@ -170,6 +146,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
