@@ -1,16 +1,3 @@
-
-                st.metric("Special Char Count", sum(1 for c in password if c in string.punctuation))
-            
-            # Character composition chart
-            st.subheader("🔤 Character Types")
-            
-            char_types = {
-                'Uppercase': sum(1 for c in password if c.isupper()),
-                'Lowercase': sum(1 for c in password if c.islower()),
-                'Digits': sum(1 for c in password if c.isdigit()),
-                'Special': sum(1 for c in password if c in string.punctuation),
-                'Spaces': sum(1 for c in password if c.isspace())
-            }
             
             # Filter out zero counts
             char_types = {k: v for k, v in char_types.items() if v > 0}
@@ -27,6 +14,7 @@
 
 if __name__ == "__main__":
     main()
+
 
 
 
