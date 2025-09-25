@@ -1,4 +1,4 @@
-d
+
         **Strong passwords should have:**
         - At least 8 characters (12+ recommended)
         - Mix of uppercase and lowercase
@@ -116,6 +116,7 @@ d
 
 if __name__ == "__main__":
     main()
+
 
 
 
