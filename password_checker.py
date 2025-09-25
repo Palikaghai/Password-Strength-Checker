@@ -1,23 +1,5 @@
 
-   
-    with col1:
-        st.subheader("Enter Password to Check")
-        
-        # Password input with toggle for visibility
-        show_password = st.checkbox("Show password", value=False)
-        password_type = "text" if show_password else "password"
-        
-        password = st.text_input(
-            "Password:",
-            type=password_type,
-            help="Enter your password to check its strength"
-        )
-        
-        if password:
-            # Analyze password
-            analysis = check_password_strength(password)
-            
-            # Display strength meter
+
             st.subheader("🎯 Strength Analysis")
             
             # Progress bar
@@ -100,6 +82,7 @@
 
 if __name__ == "__main__":
     main()
+
 
 
 
