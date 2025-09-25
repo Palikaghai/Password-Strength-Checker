@@ -1,17 +1,4 @@
 
-            
-            for key, value in analysis['criteria'].items():
-                icon = "✅" if value else "❌"
-                st.write(f"{icon} {criteria_labels[key]}")
-            
-            # Suggestions for improvement
-            suggestions = generate_suggestions(analysis['criteria'])
-            if suggestions:
-                st.subheader("💡 Suggestions for Improvement")
-                for suggestion in suggestions:
-                    st.write(suggestion)
-            else:
-                st.success("🎉 Excellent! Your password meets all security criteria.")
     
     with col2:
         if password:
@@ -53,6 +40,7 @@
 
 if __name__ == "__main__":
     main()
+
 
 
 
