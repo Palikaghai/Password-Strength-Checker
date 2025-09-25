@@ -1,17 +1,4 @@
 
-    
-    with col2:
-        if password:
-            # Password statistics
-            st.subheader("📈 Password Stats")
-            
-            stats_container = st.container()
-            with stats_container:
-                st.metric("Length", len(password))
-                st.metric("Unique Characters", len(set(password)))
-                st.metric("Uppercase Count", sum(1 for c in password if c.isupper()))
-                st.metric("Lowercase Count", sum(1 for c in password if c.islower()))
-                st.metric("Digit Count", sum(1 for c in password if c.isdigit()))
                 st.metric("Special Char Count", sum(1 for c in password if c in string.punctuation))
             
             # Character composition chart
@@ -40,6 +27,7 @@
 
 if __name__ == "__main__":
     main()
+
 
 
 
