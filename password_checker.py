@@ -1,22 +1,4 @@
 
-
-            st.subheader("🎯 Strength Analysis")
-            
-            # Progress bar
-            progress_color = analysis['color']
-            st.markdown(f"""
-            <div style="background-color: #f0f0f0; border-radius: 10px; padding: 10px; margin: 10px 0;">
-                <div style="background-color: {progress_color}; height: 30px; border-radius: 5px; width: {analysis['percentage']}%; display: flex; align-items: center; justify-content: center;">
-                    <span style="color: white; font-weight: bold;">{analysis['strength']}</span>
-                </div>
-                <p style="text-align: center; margin: 5px 0; font-weight: bold;">
-                    Score: {analysis['score']}/{analysis['max_score']} ({analysis['percentage']:.1f}%)
-                </p>
-            </div>
-            """, unsafe_allow_html=True)
-            
-            # Detailed criteria breakdown
-            st.subheader("📊 Detailed Analysis")
             
             criteria_labels = {
                 'length': 'Minimum Length (8+ chars)',
@@ -82,6 +64,7 @@
 
 if __name__ == "__main__":
     main()
+
 
 
 
