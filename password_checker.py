@@ -1,14 +1,4 @@
 
-            criteria_labels = {
-                'length': 'Minimum Length (8+ chars)',
-                'uppercase': 'Uppercase Letters',
-                'lowercase': 'Lowercase Letters',
-                'digits': 'Numbers',
-                'special_chars': 'Special Characters',
-                'no_common_patterns': 'No Common Patterns',
-                'no_repeated_chars': 'No Repeated Characters',
-                'good_length': 'Good Length (12+ chars)'
-            }
             
             for key, value in analysis['criteria'].items():
                 icon = "✅" if value else "❌"
@@ -63,6 +53,7 @@
 
 if __name__ == "__main__":
     main()
+
 
 
 
