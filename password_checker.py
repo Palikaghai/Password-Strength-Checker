@@ -1,17 +1,4 @@
-def main():
-    st.set_page_config(
-        page_title="Password Strength Checker",
-        page_icon="🔒",
-        layout="wide"
-    )
-    
-    st.title("🔒 Password Strength Checker")
-    st.markdown("---")
-    
-    # Sidebar with information
-    with st.sidebar:
-        st.header("📋 Security Tips")
-        st.markdown("""
+d
         **Strong passwords should have:**
         - At least 8 characters (12+ recommended)
         - Mix of uppercase and lowercase
@@ -129,6 +116,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
