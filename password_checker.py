@@ -1,5 +1,4 @@
 
-            
             criteria_labels = {
                 'length': 'Minimum Length (8+ chars)',
                 'uppercase': 'Uppercase Letters',
@@ -64,6 +63,7 @@
 
 if __name__ == "__main__":
     main()
+
 
 
 
