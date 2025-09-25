@@ -1,21 +1,5 @@
 
-        **Strong passwords should have:**
-        - At least 8 characters (12+ recommended)
-        - Mix of uppercase and lowercase
-        - Numbers and special characters
-        - No common patterns or words
-        - No repeated characters
-        
-        **Additional Tips:**
-        - Use a unique password for each account
-        - Consider using a password manager
-        - Enable two-factor authentication
-        - Update passwords regularly
-        """)
-    
-    # Main content
-    col1, col2 = st.columns([2, 1])
-    
+   
     with col1:
         st.subheader("Enter Password to Check")
         
@@ -116,6 +100,7 @@
 
 if __name__ == "__main__":
     main()
+
 
 
 
