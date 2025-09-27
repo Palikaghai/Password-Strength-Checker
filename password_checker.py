@@ -11,7 +11,7 @@ import pandas as pd
 # Common password blacklist (in a real app, this would be loaded from a file or API)
 COMMON_PASSWORDS = {
     'password', '123456', '123456789', 'qwerty', 'abc123', 'password123',
-    'admin', 'letmein', 'welcome', 'monkey', '1234567890', 'password1',
+    'admin','1234567890', 'password1',
     'qwerty123', 'dragon', 'master', 'hello', 'freedom', 'whatever',
     'qazwsx', 'trustno1', '654321', 'jordan23', 'harley', 'password1',
     '1234', 'robert', 'matthew', 'jordan', 'asshole', 'daniel', 'andrew',
@@ -879,6 +879,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
