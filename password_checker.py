@@ -13,12 +13,7 @@ COMMON_PASSWORDS = {
     'password', '123456', '123456789', 'qwerty', 'abc123', 'password123',
     'admin','1234567890', 'password1',
     'qwerty123', 'dragon', 'master', 'hello', 'freedom', 'whatever',
-    '1234', 'robert', 'matthew', 'jordan', 'asshole', 'daniel', 'andrew',
-    'joshua', 'michael', 'charlie', 'michelle', 'jessica', 'david',
-    'ashley', 'jennifer', 'james', 'samantha', 'william', 'sarah',
-    'christopher', 'jessica', 'matthew', 'daniel', 'andrew', 'joshua',
-    'michael', 'charlie', 'michelle', 'jessica', 'david', 'ashley',
-    'jennifer', 'james', 'samantha', 'william', 'sarah', 'christopher'
+    '1234', 'qwerty'
 }
 
 # Keyboard patterns for detection
@@ -878,6 +873,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
