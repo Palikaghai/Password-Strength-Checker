@@ -70,20 +70,18 @@ def calculate_character_set_entropy(self,password):
     return len(password) * math.log2(charset_size)
 
 def detect_keyboard_walks(self,password):
-    """Detect keyboard walk patterns in password."""
     password_lower = password.lower()
     detected_patterns = []
-    
     for pattern in KEYBOARD_PATTERNS:
         if pattern in password_lower:
             detected_patterns.append(pattern)
-        # Check reverse patterns
+        #  For Checking reverse patterns
         if pattern[::-1] in password_lower:
             detected_patterns.append(f"{pattern} (reversed)")
     
     return detected_patterns
 
-def detect_character_substitutions(password: str) -> List[str]:
+def detect_character_substitutions(self,password):
     """Detect common character substitutions like leetspeak."""
     substitutions = {
         'a': ['@', '4'],
@@ -871,6 +869,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
