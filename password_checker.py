@@ -8,7 +8,6 @@ import plotly.express as px
 import plotly.graph_objects as go
 import pandas as pd
 
-# Common password blacklist (in a real app, this would be loaded from a file or API)
 COMMON_PASSWORDS = {
     'password', '123456', '123456789', 'qwerty', 'abc123', 'password123',
     'admin','1234567890', 'password1',
@@ -873,6 +872,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
