@@ -41,7 +41,7 @@ def calculate_entropy(self,password):
     
     return entropy
 
-def calculate_character_set_entropy(password: str) -> float:
+def calculate_character_set_entropy(self,password):
     """Calculate entropy based on character set diversity."""
     char_sets = {
         'lowercase': bool(re.search(r'[a-z]', password)),
@@ -872,6 +872,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
