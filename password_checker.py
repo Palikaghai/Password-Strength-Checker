@@ -23,7 +23,7 @@ KEYBOARD_PATTERNS = [
     'ujmikolp', 'ikolp', 'olp', 'qwertyuiopasdfghjklzxcvbnm'
 ]
 
-def calculate_entropy(password: str) -> float:
+def calculate_entropy(self,password):
     """Calculate Shannon entropy of the password."""
     if not password:
         return 0.0
@@ -872,6 +872,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
