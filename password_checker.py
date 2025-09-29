@@ -44,14 +44,13 @@ def calculate_entropy(self,password):
 def calculate_character_set_entropy(self,password):
     """Calculate entropy based on character set diversity."""
     char_sets = {
-        'lowercase': bool(re.search(r'[a-z]', password)),
-        'uppercase': bool(re.search(r'[A-Z]', password)),
-        'digits': bool(re.search(r'\d', password)),
-        'special': bool(re.search(r'[!@#$%^&*(),.?":{}|<>]', password)),
+        'lowercase': bool(re.search(r'[a-z]', password)), # For LoweCase
+        'uppercase': bool(re.search(r'[A-Z]', password)), # For UpperCase
+        'digits': bool(re.search(r'\d', password)), #For Boolean Values
+        'special': bool(re.search(r'[!@#$%^&*(),.?":{}|<>]', password)), #For Special Characters
         'extended': bool(re.search(r'[^\x00-\x7F]', password))  # Unicode characters
     }
     
-    # Calculate possible character set size
     charset_size = 0
     if char_sets['lowercase']:
         charset_size += 26
@@ -70,7 +69,7 @@ def calculate_character_set_entropy(self,password):
     # Entropy = log2(charset_size^length)
     return len(password) * math.log2(charset_size)
 
-def detect_keyboard_walks(password: str) -> List[str]:
+def detect_keyboard_walks(self,password):
     """Detect keyboard walk patterns in password."""
     password_lower = password.lower()
     detected_patterns = []
@@ -872,6 +871,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
