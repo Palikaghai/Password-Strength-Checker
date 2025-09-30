@@ -112,7 +112,7 @@ def check_blacklist(self,password):
     """Check if password is in common password blacklist."""
     return password.lower() in COMMON_PASSWORDS
 
-def check_user_specific_info(self,passwordusername,email,birthdate):
+def check_user_specific_info(self,password,username,email,birthdate):
     """Check for user-specific information in password."""
     warnings = []
     password_lower = password.lower()
@@ -139,7 +139,7 @@ def check_user_specific_info(self,passwordusername,email,birthdate):
     
     return warnings
 
-def check_password_strength(password,username,email,birthdate):
+def check_password_strength(self,password,username,email,birthdate):
     criteria = {
         'length': len(password) >= 8,
         'uppercase': bool(re.search(r'[A-Z]', password)),
@@ -237,7 +237,7 @@ def check_common_patterns(self,password):
     
     return False
 
-def has_repeated_chars(password: str, threshold: int = 3) -> bool:
+def has_repeated_chars(self,password,threshold):
     """Check if password has too many repeated characters."""
     for char in set(password):
         if password.count(char) >= threshold:
@@ -865,6 +865,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
