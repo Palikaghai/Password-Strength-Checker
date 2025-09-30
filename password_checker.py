@@ -108,7 +108,7 @@ def detect_character_substitutions(self,password):
     
     return detected_subs
 
-def check_blacklist(password: str) -> bool:
+def check_blacklist(self,password)
     """Check if password is in common password blacklist."""
     return password.lower() in COMMON_PASSWORDS
 
@@ -869,6 +869,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
