@@ -139,8 +139,7 @@ def check_user_specific_info(self,passwordusername,email,birthdate):
     
     return warnings
 
-def check_password_strength(password: str, username: str = "", email: str = "", birthdate: str = "") -> Dict:
-    # Basic criteria
+def check_password_strength(password,username,email,birthdate):
     criteria = {
         'length': len(password) >= 8,
         'uppercase': bool(re.search(r'[A-Z]', password)),
@@ -151,9 +150,6 @@ def check_password_strength(password: str, username: str = "", email: str = "", 
         'no_repeated_chars': not has_repeated_chars(password),
         'good_length': len(password) >= 12,
         'not_blacklisted': not check_blacklist(password),
-        'no_keyboard_walks': len(detect_keyboard_walks(password)) == 0,
-        'no_character_substitutions': len(detect_character_substitutions(password)) == 0,
-        'no_user_info': len(check_user_specific_info(password, username, email, birthdate)) == 0
     }
     
     # Advanced analysis
@@ -220,7 +216,7 @@ def check_password_strength(password: str, username: str = "", email: str = "", 
         'is_blacklisted': check_blacklist(password)
     }
 
-def check_common_patterns(password: str) -> bool:
+def check_common_patterns(self,password):
     """Check for common weak patterns in password."""
     password_lower = password.lower()
     
@@ -869,6 +865,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
