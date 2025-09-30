@@ -108,11 +108,11 @@ def detect_character_substitutions(self,password):
     
     return detected_subs
 
-def check_blacklist(self,password)
+def check_blacklist(self,password):
     """Check if password is in common password blacklist."""
     return password.lower() in COMMON_PASSWORDS
 
-def check_user_specific_info(password: str, username: str = "", email: str = "", birthdate: str = "") -> List[str]:
+def check_user_specific_info(self,passwordusername,email,birthdate):
     """Check for user-specific information in password."""
     warnings = []
     password_lower = password.lower()
@@ -869,6 +869,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
