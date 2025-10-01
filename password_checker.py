@@ -244,7 +244,7 @@ def has_repeated_chars(self,password,threshold):
             return True
     return False
 
-def generate_suggestions(self,criteria)
+def generate_suggestions(self,criteria):
     """Generate improvement suggestions based on failed criteria."""
     suggestions = []
     
@@ -274,9 +274,9 @@ def generate_suggestions(self,criteria)
     
     return suggestions
 
-def generate_secure_password(length: int=16, include_symbols: bool = True, 
+def generate_secure_password(self,length: int=16, include_symbols: bool = True, 
                            include_uppercase: bool = True, include_lowercase: bool = True,
-                           include_digits: bool = True, exclude_similar: bool = True) -> str:
+                           include_digits: bool = True, exclude_similar: bool = True):
     """Generate a cryptographically secure password."""
     charset = ""                               
     
@@ -865,6 +865,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
