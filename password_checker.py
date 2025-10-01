@@ -244,7 +244,7 @@ def has_repeated_chars(self,password,threshold):
             return True
     return False
 
-def generate_suggestions(criteria: Dict) -> List[str]:
+def generate_suggestions(self,criteria)
     """Generate improvement suggestions based on failed criteria."""
     suggestions = []
     
@@ -865,6 +865,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
