@@ -341,7 +341,7 @@ def check_breach_status(self,password):
             'message': f"Error checking breach status: {str(e)}"
         }
 
-def get_context_requirements(context: str) -> Dict:
+def get_context_requirements(self,context):
     """Get password requirements based on context (banking, healthcare, enterprise, etc.)."""
     requirements = {
         'general': {
@@ -393,7 +393,7 @@ def get_context_requirements(context: str) -> Dict:
     
     return requirements.get(context, requirements['general'])
 
-def get_theme_colors(is_dark_mode: bool) -> Dict[str, str]:
+def get_theme_colors(self,is_dark_mode)
     """Get color scheme based on theme mode."""
     if is_dark_mode:
         return {
@@ -473,7 +473,7 @@ def create_multicolor_chart(data: Dict, title: str, chart_type: str = 'bar', is_
     
     return fig
 
-def apply_theme_styles(is_dark_mode: bool):
+def apply_theme_styles(self,is_dark_mode):
     """Apply theme-specific CSS styles."""
     theme_colors = get_theme_colors(is_dark_mode)
     
@@ -865,6 +865,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
