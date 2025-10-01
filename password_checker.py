@@ -274,11 +274,11 @@ def generate_suggestions(self,criteria)
     
     return suggestions
 
-def generate_secure_password(length: int = 16, include_symbols: bool = True, 
+def generate_secure_password(length: int=16, include_symbols: bool = True, 
                            include_uppercase: bool = True, include_lowercase: bool = True,
                            include_digits: bool = True, exclude_similar: bool = True) -> str:
     """Generate a cryptographically secure password."""
-    charset = ""
+    charset = ""                               
     
     if include_lowercase:
         charset += string.ascii_lowercase
@@ -300,7 +300,7 @@ def generate_secure_password(length: int = 16, include_symbols: bool = True,
     
     return ''.join(secrets.choice(charset) for _ in range(length))
 
-def check_breach_status(password: str) -> Dict:
+def check_breach_status(self,password):
     """Check if password has been compromised in data breaches using HaveIBeenPwned API."""
     try:
         # Hash the password with SHA-1
@@ -865,6 +865,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
