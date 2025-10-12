@@ -64,7 +64,7 @@ def calculate_character_set_entropy(self,password):
         charset_size += 1000  # Approximate for Unicode
     
     if charset_size == 0:
-        return 0
+        return 0.0
        
     
     # Entropy = log2(charset_size^length)
@@ -866,6 +866,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
