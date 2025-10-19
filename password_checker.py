@@ -2,7 +2,11 @@ import streamlit as st
 import re
 import math
 import hashlib
-
+from typing import Dict, List, Tuple
+from collections import Counter
+import plotly.express as px
+import plotly.graph_objects as go
+import pandas as pd
 
 COMMON_PASSWORDS = {
     'password', '123456', '123456789', 'qwerty', 'abc123', 'password123',
@@ -862,6 +866,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
